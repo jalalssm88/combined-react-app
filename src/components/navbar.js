@@ -25,7 +25,7 @@ class Navbar extends Component{
        
     render(){
         return(
-            <div className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="navbar navbar-expand-lg navbar-light top_nav">
             <div className="container">
                 <a className="navbar-brand navbar_header">Combined App</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" onClick={this.changed.bind(this)} data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,12 +33,15 @@ class Navbar extends Component{
                 </button>
 
                 <div className="collapse navbar-collapse" style={this.changed()}>
-                    <ul className="navbar-nav mr-auto">
+                    <ul className="navbar-nav mr-auto nav_ul">
                         <li className="nav-item">
-                            <a className="nav-link" >Home </a>
+                            <Link to='/weather' className="nav-link" >Weather</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" >Link</a>
+                            <Link to='/todo' className="nav-link" >Todo</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/users' className="nav-link" >Users</Link>
                         </li>
                     </ul>
                     <div>

@@ -38,11 +38,30 @@ class Todo extends Component{
         })
     }
 
+    Complete = (e) =>{
+        console.log('e=============',e)
+        this.setState({
+            todos:this.state.todos.map(todo =>{
+                if(e==todo.id){
+                    todo.completed =! todo.completed
+                }
+                return todo
+            })
+        })
+    }
+
+    Delete = (e) =>{
+        console.log('from parent page delete', e)
+        this.setState({
+            todos: [...this.state.todos.filter(todo=> todo.id!==e)]
+        })
+    }
+
     render(){
         return(
             <div className="container">
                 <AddTodo addTodo={this.addTodo}/>
-                <TodoApp todos={this.state.todos}/>
+                <TodoApp todos={this.state.todos} Complete={this.Complete} Delete={this.Delete}/>
             </div>
         )
     }

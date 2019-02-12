@@ -30,7 +30,7 @@ class AddTodo extends Component{
                     <h4 className="todo_header">Todo Lists</h4>
                     <form className="form-inline" onSubmit={this.submitHandler}>
                         <div className="form-group" style={{'width':'85%'}}>
-                            <input type="text" value={this.state.title} className="form-control" style={{'width':'100%'}} onChange={this.changeHandler}/>
+                            <input type="text" placeholder="add item ...." value={this.state.title} className="form-control" style={{'width':'100%'}} onChange={this.changeHandler}/>
                         </div>
                         <button style={{'marginLeft':'71px'}} type="submit" className="btn btn-primary">Add Item</button>
                     </form>

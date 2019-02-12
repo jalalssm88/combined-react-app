@@ -26,12 +26,12 @@
 }
 .todo_lists{
   background: green;
-  color: white;
   padding-top: 15px;
   padding-bottom: 8px;
-  border-bottom: 1px dotted;
+  border-bottom: 1px dotted white;
   margin-left: 0px;
   margin-right: 0px;
+  border-radius: 8px;
 }
 .cross_button{
   float: right;
@@ -51,4 +51,31 @@
   margin-bottom: 20px;
   border-bottom: 1px solid green;
   width:11%;
+}
+
+.users_details{
+  border-bottom: 5px dashed gray;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.user_header{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid green;
+  width: 15%;
+}
+
+.top_nav{
+  background-color: #4267b2;
+  color: white;
+}
+
+.nav_ul .nav-item a{
+  color: white !important;
+}
+
+.nav_ul .nav-item a:hover{
+  border-bottom: 1px solid white;
+  padding-bottom: 0px;
 }

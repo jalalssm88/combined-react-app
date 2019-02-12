@@ -48,7 +48,7 @@ class Weather extends Component{
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12">
-                        <h3 className="weather_header">Weather Finder</h3>
+                        <h4 className="weather_header">Weather Finder</h4>
                         <form onSubmit={this.submitHandler} >
                             <div className="form-group">
                                 <label htmlFor="city">City</label>

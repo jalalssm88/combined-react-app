@@ -4,20 +4,21 @@ import './App.css';
 import Navbar from './components/navbar'
 import Weather from './components/weather_app/weather'
 import Todo from './components/todo_app/todo'
+import UserList from './components/users/userList'
 
 class App extends Component {
   render() {
     return (
-      // <Router>
-      //   <Route path='/nav' component={Navbar} />
-      // </Router>
-      <div>
+      <Router>
+        <div>
         <Navbar />
-        {/* <Weather /> */}
-        
-        <Todo />
-      </div>
-      
+        <Switch>
+          <Route path='/weather' component={Weather} />
+          <Route path='/todo' component={Todo} />
+          <Route path='/users' component={UserList} />
+        </Switch>
+        </div>
+      </Router>
     );
   }
 }
