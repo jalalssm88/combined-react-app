@@ -1,0 +1,54 @@
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.weather_header{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid green;
+  width: 19%;
+}
+.navbar_header{
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: arial !important;
+}
+.time_container{
+  padding-top: 8px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.todo_lists{
+  background: green;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px dotted;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.cross_button{
+  float: right;
+  border-radius: 50px;
+  background: red;
+  border: navajowhite;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.todo_header{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid green;
+  width:11%;
+}
