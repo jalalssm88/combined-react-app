@@ -42,7 +42,7 @@ class Todo extends Component{
         console.log('e=============',e)
         this.setState({
             todos:this.state.todos.map(todo =>{
-                if(e==todo.id){
+                if(e===todo.id){
                     todo.completed =! todo.completed
                 }
                 return todo

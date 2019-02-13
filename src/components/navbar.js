@@ -27,7 +27,7 @@ class Navbar extends Component{
         return(
             <div className="navbar navbar-expand-lg navbar-light top_nav">
             <div className="container">
-                <a className="navbar-brand navbar_header">Combined App</a>
+                <Link to="/" className="navbar-brand navbar_header">Combined App</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" onClick={this.changed.bind(this)} data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
