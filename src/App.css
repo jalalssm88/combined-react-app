@@ -80,3 +80,19 @@
   border-bottom: 1px solid white;
   padding-bottom: 0px;
 }
+
+.recipe_from_row{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe_form input{
+  width: 92% !important;
+
+}
+.recipe_form button{
+  margin-left: 14px !important;
+}
+.recipe_card{
+  margin-bottom: 30px;
+}

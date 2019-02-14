@@ -5,7 +5,7 @@ class Navbar extends Component{
     constructor(props){
         super(props);
         this.state = {
-            currentTime : new Date().toString()
+            currentTime : new Date().toString().toString().slice(0, 25)
         }
         this.updateTime()
     }
@@ -42,6 +42,9 @@ class Navbar extends Component{
                         </li>
                         <li className="nav-item">
                             <Link to='/users' className="nav-link" >Users</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/recipe' className="nav-link" >Recipe</Link>
                         </li>
                     </ul>
                     <div>
