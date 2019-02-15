@@ -8,13 +8,24 @@ class UserList extends Component{
         this.state = {
             users:[]
         }
-    }
-    componentDidMount(){
+
         Axios.get(`https://jsonplaceholder.typicode.com/users`).then(res=>{
             this.setState({
                 users:res.data
             })
         })
+    }
+    componentDidUpdate(){
+        const local_user = JSON.stringify(this.state.users)
+        localStorage.setItem('local_user', local_user);
+    }
+        
+    componentDidMount(){
+        const local_user_string = localStorage.getItem('local_user')
+        const local_user_parsed = JSON.parse(local_user_string);
+       this.setState({
+           users:local_user_parsed
+       })
     }
     render(){
     

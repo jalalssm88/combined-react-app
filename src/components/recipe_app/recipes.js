@@ -12,10 +12,12 @@ class Recipies extends Component{
                         <div className="card recipe_card">
                             <img className="card-img-top" src={recep.image_url} alt={recep.title} style={{'height':'230px'}} />
                             <div className="card-body">
-                                <h6 className="card-title">{recep.title}</h6>
+                                <h6 className="card-title">
+                                    {recep.title.length < 20 ? `${recep.title}`:`${recep.title.substring(0, 25)}...`}
+                                </h6>
                                 <p className="card-text"><span><b>PUBLISHER:</b> </span>{ recep.publisher }</p>
                                 <Link to={{
-                                      pathname: `/recipe/myrecip/${recep.recipe_id}`,
+                                      pathname: `/recipe_detail/${recep.recipe_id}`,
                                       state: { recipe: recep.title}
                                 }} className="btn btn-primary">view</Link>
                             </div>

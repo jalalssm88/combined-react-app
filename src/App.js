@@ -6,6 +6,7 @@ import Weather from './components/weather_app/weather'
 import Todo from './components/todo_app/todo'
 import UserList from './components/users/userList'
 import Recipe from './components/recipe_app/recipe'
+import RecipeDetail from './components/recipe_app/recipeDetail'
 
 class App extends Component {
   render() {
@@ -17,7 +18,9 @@ class App extends Component {
           <Route path='/weather' component={Weather} />
           <Route path='/todo' component={Todo} />
           <Route path='/users' component={UserList} />
-          <Route path='/recipe' component={Recipe} />
+          <Route path='/recipe' component={Recipe} />  
+          <Route path='/recipe_detail/:id' component={RecipeDetail} />   
+
         </Switch>
         </div>
       </Router>

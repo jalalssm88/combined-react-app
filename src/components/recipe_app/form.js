@@ -16,9 +16,12 @@ class Form extends Component{
     submitHandler = (e) =>{
         e.preventDefault();
         this.props.addName(this.state.recipe_name)
-        this.setState({
-            recipe_name:''
-        })
+        setInterval(() => {
+            this.setState({
+                recipe_name:''
+            })
+        }, 100);
+           
     }
     render(){
         return(
